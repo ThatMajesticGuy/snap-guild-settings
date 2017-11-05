@@ -13,7 +13,7 @@ bot.on("guildMemberAdd", member => {
 	const role = member.guild.roles.find("name", "User")
 	member.addRole(role)
 	var embed = new Discord.RichEmbed()
-	.setTitle(`Hello ${member.user}! :wave:`)
+	.setTitle(`Hello ${member.user.username}! :wave:`)
 	.setColor("RANDOM")
 	.setThumbnail(member.user.displayAvatarURL)
 	.setTimestamp()
