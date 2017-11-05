@@ -11,7 +11,7 @@ bot.on("guildMemberAdd", member => {
 	if (member.guild.id !== "371471273278308373") return;
 	const channel = bot.channels.get("376502657927348225")
 	const role = member.guild.roles.find("name", "User")
-	member.addRole(role)
+	member.addRole(role.id)
 	var embed = new Discord.RichEmbed()
 	.setTitle(`Hello ${member.user}! :wave:`)
 	.setColor("RANDOM")
