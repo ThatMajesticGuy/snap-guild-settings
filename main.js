@@ -10,7 +10,7 @@ console.log(`Logged in as ${bot.user.tag}`)
 bot.on("guildMemberAdd", member => {
 	if (member.guild.id !== "371471273278308373") return;
 	const channel = bot.channels.get("376502657927348225")
-	const role = member.guild.roles.find("name", "User")
+	const role = member.guild.roles.find("name", "Users")
 	member.addRole(role)
 	var embed = new Discord.RichEmbed()
 	.setTitle(`Hello ${member.user.username}! :wave:`)
