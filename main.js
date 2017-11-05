@@ -17,7 +17,7 @@ bot.on("guildMemberAdd", member => {
 	.setColor("RANDOM")
 	.setThumbnail(member.user.displayAvatarURL)
 	.setTimestamp()
-	.addField("Welcome to Snap JS Offical!", "Enjoy your stay!")
+	.addField("Welcome to Snap JS Offical!", `Enjoy your stay! ${member.user}!`)
   channel.send({ embed: embed });
 	});
   
